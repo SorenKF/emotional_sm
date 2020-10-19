@@ -20,7 +20,7 @@ def run(task_name, data_dir, pipeline_name, print_predictions):
     tsk = task(task_name)
     logger.info('>> Loading data...')
     tsk.load(data_dir)
-    logger.info('>> retrieving train/data instances...' + data_dir)
+    logger.info('>> retrieving train/data instances...' + )
     train_X, train_y, test_X, test_y = utils.get_instances(tsk, split_train_dev=False)
     test_X_ref = test_X
 
