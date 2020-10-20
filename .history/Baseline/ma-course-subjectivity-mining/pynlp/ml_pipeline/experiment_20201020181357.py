@@ -41,12 +41,12 @@ def run(task_name, data_dir, pipeline_name, print_predictions):
 
     logger.info('>> evaluation...')
     logger.info(utils.eval(test_y, sys_y))
-            
-    # Write predictions to file
-    with open(f'results_{pipeline_name}_{data_dir}.tsv', 'w+', encoding='utf-8') as outfile:
-        outfile.write("text\tgold_label\tpredicted_label\n")
-        for i in range(len(test_X_ref)):
-            outfile.write(f"{test_X_ref[i]}\t{test_y[i]}\t{sys_y[i]}\n")
+    
+            # Write predictions to file
+        with open(f'results_{pipeline_name}.tsv', 'w+', encoding='utf-8') as outfile:
+            outfile.write("text\tgold_label\tpredicted_label\n")
+            for i in range(len(test_X_ref)):
+                outfile.write(f"{test_X_ref[i]}\t{test_y[i]}\t{sys_y[i]}\n")
 
     if print_predictions:
         logger.info('>> predictions')
