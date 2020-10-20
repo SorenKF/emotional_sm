@@ -1,3 +1,8 @@
 {
-  "Baseline/ma-course-subjectivity-mining/pynlp/tests/test_suite.py": true
+  "Baseline/ma-course-subjectivity-mining/pynlp/tests/test_suite.py::test_cnn_raw": true,
+  "Baseline/ma-course-subjectivity-mining/pynlp/tests/test_suite.py::test_combined_features": true,
+  "Baseline/ma-course-subjectivity-mining/pynlp/tests/test_suite.py::test_count_vectorizer": true,
+  "Baseline/ma-course-subjectivity-mining/pynlp/tests/test_suite.py::test_data_load": true,
+  "Baseline/ma-course-subjectivity-mining/pynlp/tests/test_suite.py::test_full_pipelines": true,
+  "Baseline/ma-course-subjectivity-mining/pynlp/tests/test_suite.py::test_preprocessing": true
 }

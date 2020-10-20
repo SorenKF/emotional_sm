@@ -50,7 +50,8 @@ def svm_libsvc_tfidf():
 
 
 def svm_libsvc_embed():
-    return pipeline(preprocessing.std_prep(), representation.text2embeddings('wiki-news'), svm.LinearSVC(max_iter=10000, dual=False, C=0.1))
+    return pipeline(preprocessing.std_prep(), representation.text2embeddings('wiki-news'), svm.LinearSVC(max_iter=10000,
+                                                                                              dual=False, C=0.1))
 
 
 def svm_sigmoid_embed():
@@ -81,5 +82,5 @@ def svm_libsvc_char_4gram():
 # Deepmoji embedding pipeline (hopefully)
 
 
-#def deepmoji_embed:
-#    return pipeline(preprocessing.std_prep(), representation)
+def deepmoji_embed:
+    return pipeline(preprocessing.std_prep(), representation)
